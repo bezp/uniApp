@@ -9,7 +9,8 @@ namespace ContosoUniversity.Data
     {
         public static void Initialize(SchoolContext context)
         {
-            context.Database.EnsureCreated();
+            //designed for testing or rapid prototyping where the DB is dropped and re - created frequently
+            //context.Database.EnsureCreated();
 
             // Look for any students.
             if (context.Students.Any())
